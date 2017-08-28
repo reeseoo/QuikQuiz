@@ -16,6 +16,12 @@
   "bugs": {
     "url": "https://github.com/reeseoo/QuikQuiz/issues"
   },
+  "babel": {
+    "presets": [
+      "es2015",
+      "react"
+    ]
+  },
   "homepage": "https://github.com/reeseoo/QuikQuiz#readme",
   "devDependencies": {
     "babel-core": "^6.26.0",
