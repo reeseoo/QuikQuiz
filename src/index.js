@@ -1,5 +1,10 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './app.js';
+var React = require('react');
+var ReactDOM = require('react-dom');
+var routes = require('./routes');
 
-ReactDOM.render(<App />, document.getElementById('app'));
+ReactDOM.render(
+    <BrowserRouter>
+        <Route exact path='/' component={App}/>
+    </BrowserRouter>,
+    document.getElementById('app')
+)

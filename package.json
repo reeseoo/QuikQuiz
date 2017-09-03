@@ -4,7 +4,7 @@
   "description": "A quiz game for mobile",
   "main": "index.js",
   "scripts": {
-    "webpack" : "webpack",
+    "webpack": "webpack",
     "start": "webpack-dev-server --progress --colors --hot --config ./webpack.config.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -18,9 +18,10 @@
     "url": "https://github.com/reeseoo/QuikQuiz/issues"
   },
   "babel": {
-    "presets":[
-      "es2015", "react"
-  ]
+    "presets": [
+      "es2015",
+      "react"
+    ]
   },
   "homepage": "https://github.com/reeseoo/QuikQuiz#readme",
   "devDependencies": {
@@ -32,5 +33,9 @@
     "react-dom": "^15.6.1",
     "webpack": "^3.5.5",
     "webpack-dev-server": "^2.7.1"
+  },
+  "dependencies": {
+    "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2"
   }
 }
