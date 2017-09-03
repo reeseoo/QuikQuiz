@@ -4,7 +4,7 @@ import './css/menu.css';
 const MenuButton = (props) => {
   return (
     <div className="menu-button">
-      <h1>{props.name}</h1>
+      <button>{props.name}</button>
     </div>
   )
 }
