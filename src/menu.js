@@ -1,4 +1,13 @@
 import React, { Component } from 'react';
+import './css/menu.css';
+
+const MenuButton = (props) => {
+  return (
+    <div>
+      <h1>Button</h1>
+    </div>
+  )
+}
 
 class Menu extends Component {
   /*
@@ -12,6 +21,9 @@ class Menu extends Component {
     return (
       <div>
         <h1>Quik Quiz</h1>
+        <MenuButton />
+        <MenuButton />
+        <MenuButton />
       </div>
     );
   }
