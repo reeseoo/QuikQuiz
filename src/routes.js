@@ -6,8 +6,7 @@ import Menu from './menu'
 var routes = (
     <BrowserRouter>
         <div>
-            <Route path='/' component={App} />
-            <Route path="/menu" component={Menu} />
+            <Route path='/' component={Menu} />
         </div>
     </BrowserRouter>
 );
