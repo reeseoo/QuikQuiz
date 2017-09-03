@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 class App extends Component {
   /*
@@ -11,7 +12,8 @@ class App extends Component {
   render() {
     return (
       <div>
-        <h1>Test title</h1>
+        <h1>Quik Quiz</h1>
+        <Link to="/menu">Menu</Link>
       </div>
     );
   }
