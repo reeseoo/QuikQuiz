@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import './css/menu.css';
 import { Button } from 'react-bootstrap';
+import './css/main.css';
 
 const LinkButton = (props) => {
     return (
-      <div className="menu-button">
+      <div className="wrapper-button">
         <Link to={ props.link }>
-          <Button>{props.name}</Button>
+          <Button className="main-button">{ props.name }</Button>
         </Link>
       </div>
     )
