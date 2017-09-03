@@ -38,6 +38,7 @@
   },
   "dependencies": {
     "react-bootstrap": "^0.31.2",
+    "react-grid-system": "^2.9.6",
     "react-router": "^4.2.0",
     "react-router-dom": "^4.2.2"
   }

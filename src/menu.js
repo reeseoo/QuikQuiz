@@ -6,11 +6,10 @@ import { Button } from 'react-bootstrap';
 const MenuButton = (props) => {
   return (
     <div className="menu-button">
-      <Button bsStyle="success">{props.name}</Button>
       <Link to={ props.link } 
             onClick={ console.log("onClick works") } 
             >
-            { props.name }
+                <Button bsStyle="success">{props.name}</Button>
       </Link>
     </div>
   )
