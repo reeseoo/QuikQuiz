@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import './css/menu.css';
+import { Button } from 'react-bootstrap';
 
 const MenuButton = (props) => {
   return (
     <div className="menu-button">
-      <button>{props.name}</button>
+      <Button bsStyle="success">{props.name}</Button>
     </div>
   )
 }
