@@ -6,30 +6,20 @@ import { Button } from 'react-bootstrap';
 const MenuButton = (props) => {
   return (
     <div className="menu-button">
-      <Button bsStyle="success">{props.name}</Button>
-      <Link to={ props.link } 
-            onClick={ console.log("onClick works") } 
-            >
-            { props.name }
+      <Link to={ props.link } >
+        <Button bsStyle="success">{props.name}</Button>
       </Link>
     </div>
   )
 }
 
 class Menu extends Component {
-  /*
-  constructor(props) {
-    super(props);
-    this.state = { };
-  }
-  */
-
   render() {
     return (
       <div>
         <h1>Quik Quiz</h1>
-        <MenuButton link="/" name="Start"/>
-        <MenuButton link="/" name="Help"/>
+        <MenuButton link="/game" name="Start"/>
+        <MenuButton link="/help" name="Help"/>
         <MenuButton link="/" name="Quit"/>
       </div>
     );

@@ -3,6 +3,7 @@ import { BrowserRouter, Route } from 'react-router-dom'
 import App from './app'
 import Menu from './menu'
 import Game from './game'
+import Help from './help'
 
 var routes = (
     <BrowserRouter>
