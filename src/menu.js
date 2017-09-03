@@ -5,9 +5,7 @@ import './css/menu.css';
 const MenuButton = (props) => {
   return (
     <div className="menu-button">
-      <Link to={ props.link } 
-            onClick={ console.log("onClick works") } 
-            >
+      <Link to={ props.link } >
             { props.name }
       </Link>
     </div>
@@ -15,19 +13,12 @@ const MenuButton = (props) => {
 }
 
 class Menu extends Component {
-  /*
-  constructor(props) {
-    super(props);
-    this.state = { };
-  }
-  */
-
   render() {
     return (
       <div>
         <h1>Quik Quiz</h1>
-        <MenuButton link="/" name="Start"/>
-        <MenuButton link="/" name="Help"/>
+        <MenuButton link="/game" name="Start"/>
+        <MenuButton link="/help" name="Help"/>
         <MenuButton link="/" name="Quit"/>
       </div>
     );
