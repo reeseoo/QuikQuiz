@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import './css/menu.css';
 import { Button } from 'react-bootstrap';
 
@@ -6,6 +7,11 @@ const MenuButton = (props) => {
   return (
     <div className="menu-button">
       <Button bsStyle="success">{props.name}</Button>
+      <Link to={ props.link } 
+            onClick={ console.log("onClick works") } 
+            >
+            { props.name }
+      </Link>
     </div>
   )
 }
@@ -22,9 +28,9 @@ class Menu extends Component {
     return (
       <div>
         <h1>Quik Quiz</h1>
-        <MenuButton name="Start"/>
-        <MenuButton name="Help"/>
-        <MenuButton name="Quit"/>
+        <MenuButton link="/" name="Start"/>
+        <MenuButton link="/" name="Help"/>
+        <MenuButton link="/" name="Quit"/>
       </div>
     );
   }
