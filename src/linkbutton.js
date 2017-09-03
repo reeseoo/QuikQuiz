@@ -6,7 +6,7 @@ import { Button } from 'react-bootstrap';
 const LinkButton = (props) => {
     return (
       <div className="menu-button">
-        <Link to={ props.link } onClick={ console.log("onClick works") }>
+        <Link to={ props.link }>
           <Button>{props.name}</Button>
         </Link>
       </div>
