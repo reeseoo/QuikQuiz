@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
-class Game extends Component {
+class Help extends Component {
   render() {
     return (
       <div>
-        <p>Lets a go!</p>
+        <p>Here is the help page</p>
       </div>
     );
   }
 }
 
-export default Game;
+export default Help;
