@@ -1,5 +1,10 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './app.js';
+var React = require('react');
+var ReactDOM = require('react-dom');
+var routes = require('./routes');
+import { BrowserRouter, Route } from 'react-router-dom'
+import App from './app'
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(
+    routes,
+    document.getElementById('app')
+)
