@@ -4,4 +4,4 @@ import App from './app';
 
 console.log('Index js')
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById('app'));
