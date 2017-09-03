@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+
 import './css/menu.css';
 
 const MenuButton = (props) => {
@@ -21,6 +23,7 @@ class Menu extends Component {
     return (
       <div>
         <h1>Quik Quiz</h1>
+        <Link to="/game" >Start</Link>
         <MenuButton name="Start"/>
         <MenuButton name="Help"/>
         <MenuButton name="Quit"/>
