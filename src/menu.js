@@ -5,7 +5,11 @@ import './css/menu.css';
 const MenuButton = (props) => {
   return (
     <div className="menu-button">
-      <Link to={props.link} >{props.name}</Link>
+      <Link to={ props.link } 
+            onClick={ console.log("onClick works") } 
+            >
+            { props.name }
+      </Link>
     </div>
   )
 }
