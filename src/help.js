@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import LinkButton from './linkbutton'
+import LinkButton from './linkbutton';
+import './css/main.css';
 
 class Help extends Component {
   render() {
