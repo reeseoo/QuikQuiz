@@ -10,7 +10,7 @@ class Question extends Component {
   render() {
     return (
       <div className="question">
-        <p>{ props.question }</p>
+        <p>{ this.props.question }</p>
       </div>
     );
   }
