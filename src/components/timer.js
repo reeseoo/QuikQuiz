@@ -4,13 +4,13 @@ class Timer extends Component {
   
   constructor(props) {
     super(props);
-    this.state = {time: 60};
+    this.state = { };
   }
 
   render() {
     return (
       <div className="timer">
-        <h1>{this.time}</h1>
+        <h1>{ this.props.time }</h1>
       </div>
     );
   }
